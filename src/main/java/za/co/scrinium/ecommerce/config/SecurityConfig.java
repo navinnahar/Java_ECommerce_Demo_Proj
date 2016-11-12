@@ -51,6 +51,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     web.ignoring().antMatchers("/resources/**");
   }
 
+
   @Override
   protected void configure(HttpSecurity aHttpSecurity) throws Exception {
     aHttpSecurity.formLogin().loginPage("/login").failureUrl("/login?loginFailed").defaultSuccessUrl("/").permitAll()
