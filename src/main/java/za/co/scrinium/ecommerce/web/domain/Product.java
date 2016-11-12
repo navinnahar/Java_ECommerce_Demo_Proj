@@ -87,6 +87,7 @@ public class Product {
     price = aPrice;
   }
 
+
   public static Product fromDetail(ProductDetail aProduct) {
     Product product = new Product();
     product.setId(aProduct.getId());
